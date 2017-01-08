@@ -1,13 +1,20 @@
 <!doctype html>
 <html ng-app="eventsApp">
   <head>
-     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/app.css">
-   </head>
+  </head>
 
 
   <body ng-cloak>
     <div class="container">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <ul class="nav">
+            <li><a href="NewEvent.html">Create Event</a></li>
+          </ul>
+        </div>
+      </div>
       <div ng-controller="EventController" style="padding-left:20px; padding-right:20px">
         <img ng-src="{{event.imageUrl}}" alt="{{event.name}}">
         <div class="row">
